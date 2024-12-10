@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Types de Carrelage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        td {
+            font-size: 16px;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            th {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table {
+                width: 100%;
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            th {
+                font-size: 14px;
+            }
+
+            td {
+                word-wrap: break-word;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Type de Carrelage</th>
+                <th>Composition</th>
+                <th>Propriétés Clés</th>
+                <th>Meilleure Utilisation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Céramique</td>
+                <td>Argile, silice, feldspath, cuit à température moyenne</td>
+                <td>Moins dense, plus poreux, moins résistant aux chocs</td>
+                <td>Murs (kitchenettes, salles de bains), sols à faible trafic</td>
+            </tr>
+            <tr>
+                <td>Porcelaine</td>
+                <td>Kaolin, silice, feldspath, cuit à haute température</td>
+                <td>Plus dense et moins poreuse, résistant aux taches et à l'usure</td>
+                <td>Sols à fort trafic, zones extérieures, salles de bains</td>
+            </tr>
+            <tr>
+                <td>Grès Cérame</td>
+                <td>Argile, silice, feldspath, cuit à très haute température</td>
+                <td>Très dense et dur, faible porosité, haute résistance</td>
+                <td>Sols à très fort trafic, grandes surfaces, extérieurs</td>
+            </tr>
+            <tr>
+                <td>Pierre Naturelle</td>
+                <td>Marbre, granit, travertin, calcaire, etc.</td>
+                <td>Esthétique unique, entretien requis pour certaines pierres</td>
+                <td>Espaces intérieurs luxueux, terrasses, allées extérieures</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
