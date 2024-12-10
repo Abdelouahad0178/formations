@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau des Types de Carrelage</title>
+    <title>Plateforme de Formation - Carrelage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,119 +11,135 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
         }
 
-        table {
-            width: 90%;
-            max-width: 1000px;
-            margin: 20px;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-
-        th {
+        /* Menu de navigation */
+        nav {
+            width: 100%;
             background-color: #007BFF;
-            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
             font-size: 18px;
         }
 
-        td {
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section de contenu */
+        .content {
+            width: 90%;
+            max-width: 1000px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .module-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .module-card h3 {
+            color: #007BFF;
+        }
+
+        .module-card p {
             font-size: 16px;
             color: #333;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        .module-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            table {
-                width: 100%;
-                font-size: 14px;
-            }
-
-            th, td {
-                padding: 10px;
-            }
-
-            th {
-                font-size: 16px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            table {
-                width: 100%;
-                font-size: 12px;
-            }
-
-            th, td {
-                padding: 8px;
-            }
-
-            th {
-                font-size: 14px;
-            }
-
-            td {
-                word-wrap: break-word;
-            }
+        .module-card a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Type de Carrelage</th>
-                <th>Composition</th>
-                <th>Propriétés Clés</th>
-                <th>Meilleure Utilisation</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Céramique</td>
-                <td>Argile, silice, feldspath, cuit à température moyenne</td>
-                <td>Moins dense, plus poreux, moins résistant aux chocs</td>
-                <td>Murs (kitchenettes, salles de bains), sols à faible trafic</td>
-            </tr>
-            <tr>
-                <td>Porcelaine</td>
-                <td>Kaolin, silice, feldspath, cuit à haute température</td>
-                <td>Plus dense et moins poreuse, résistant aux taches et à l'usure</td>
-                <td>Sols à fort trafic, zones extérieures, salles de bains</td>
-            </tr>
-            <tr>
-                <td>Grès Cérame</td>
-                <td>Argile, silice, feldspath, cuit à très haute température</td>
-                <td>Très dense et dur, faible porosité, haute résistance</td>
-                <td>Sols à très fort trafic, grandes surfaces, extérieurs</td>
-            </tr>
-            <tr>
-                <td>Pierre Naturelle</td>
-                <td>Marbre, granit, travertin, calcaire, etc.</td>
-                <td>Esthétique unique, entretien requis pour certaines pierres</td>
-                <td>Espaces intérieurs luxueux, terrasses, allées extérieures</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Menu de navigation -->
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="introduction.html">Introduction au Carrelage</a>
+        <a href="types.html">Types de Carrelage</a>
+        <a href="composition.html">Composition du Carrelage</a>
+        <a href="entretien.html">Entretien du Carrelage</a>
+        <a href="pratique.html">Applications Pratiques</a>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <h1>Bienvenue sur la Plateforme de Formation - Carrelage</h1>
+        <p class="description">Cette plateforme vous guide à travers les différents types de carrelage, leurs compositions, leur entretien et leurs applications pratiques. Choisissez un module pour commencer votre formation.</p>
+
+        <!-- Grille des modules -->
+        <div class="modules-grid">
+            <div class="module-card">
+                <h3>Introduction au Carrelage</h3>
+                <p>Apprenez les bases du carrelage, son histoire, ses types et ses utilisations principales.</p>
+                <a href="introduction.html">Démarrer le Module</a>
+            </div>
+
+            <div class="module-card">
+                <h3>Types de Carrelage</h3>
+                <p>Découvrez les différents types de carrelage (céramique, porcelaine, grès cérame) et leurs caractéristiques.</p>
+                <a href="types.html">Démarrer le Module</a>
+            </div>
+
+            <div class="module-card">
+                <h3>Composition du Carrelage</h3>
+                <p>Comprenez la composition des carrelages et leur processus de fabrication.</p>
+                <a href="composition.html">Démarrer le Module</a>
+            </div>
+
+            <div class="module-card">
+                <h3>Entretien du Carrelage</h3>
+                <p>Apprenez les bonnes pratiques pour entretenir et nettoyer vos carrelages.</p>
+                <a href="entretien.html">Démarrer le Module</a>
+            </div>
+
+            <div class="module-card">
+                <h3>Applications Pratiques</h3>
+                <p>Découvrez les meilleures applications pour chaque type de carrelage en fonction des environnements.</p>
+                <a href="pratique.html">Démarrer le Module</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
