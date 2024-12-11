@@ -5,23 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entretien du Carrelage</title>
     <style>
-        /* Votre style CSS habituel */
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #007BFF;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content section */
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        h2 {
+            color: #007BFF;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #0056b3;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul li strong {
+            color: #007BFF;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .content {
+                padding: 15px;
+                margin: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            ul li {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 10px 0;
+            }
+
+            nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+
+            .content {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            ul li {
+                font-size: 14px;
+            }
+        }
+
     </style>
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav>
         <a href="introduction.html">Introduction</a>
         <a href="types.html">Types</a>
         <a href="Composition.html">Composition</a>
         <a href="index.html">Accueil</a>
         <a href="pratique.html">Pratiques</a>
+        <a href="sante.html">COV santé</a>
     </nav>
 
+    <!-- Content section -->
     <div class="content">
         <h1>Entretien du Carrelage</h1>
 
         <section id="theme4">
             <h2>Nettoyage des Carrelages</h2>
+
             <h3>Carrelage en Céramique</h3>
-            <p>Utilisez un détergent doux ou du vinaigre dilué dans de l'eau pour enlever la saleté. Évitez les
+            <p>Utilisez un détergent doux ou du vinaigre dilué dans de l'eau pour enlever la saleté. Évitez les produits chimiques agressifs qui peuvent endommager l'émail. Un chiffon doux ou une serpillière est recommandé pour éviter les rayures.</p>
+
+            <h3>Carrelage en Porcelaine</h3>
+            <p>Le carrelage en porcelaine est plus résistant aux produits de nettoyage, mais il est préférable d'utiliser des produits non abrasifs pour préserver son éclat. Un mélange de savon doux et d'eau tiède suffit pour un entretien régulier.</p>
+
+            <h3>Carrelage en Grès Cérame</h3>
+            <p>Le grès cérame est très résistant et facile à entretenir. Un nettoyage à l'eau chaude avec un détergent doux est recommandé. Pour des taches tenaces, vous pouvez utiliser un nettoyant spécifique pour grès cérame.</p>
+
+            <h3>Carrelage en Pierre Naturelle</h3>
+            <p>Les carreaux en pierre naturelle comme le marbre ou le granit doivent être nettoyés avec des produits non acides. Il est préférable d'utiliser un produit spécialement conçu pour la pierre afin d'éviter d'endommager sa surface.</p>
+        </section>
+    </div>
+
+</body>
+</html>

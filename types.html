@@ -5,19 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Types de Carrelage</title>
     <style>
-        /* Votre style CSS habituel */
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Menu de navigation */
+        nav {
+            width: 100%;
+            background-color: #007BFF;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenu principal */
+        .content {
+            width: 90%;
+            max-width: 1000px;
+            margin-top: 20px;
+            text-align: left;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #007BFF;
+            text-align: center;
+        }
+
+        h2 {
+            color: #007BFF;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        ul {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li strong {
+            color: #007BFF;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .content {
+                padding: 15px;
+                margin: 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p,
+            ul li {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 10px 0;
+            }
+
+            nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+
+            .content {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul li {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
 
+    <!-- Menu de navigation -->
     <nav>
         <a href="introduction.html">Introduction</a>
         <a href="index.html">Accueil</a>
         <a href="Composition.html">Composition</a>
-        <a href="#theme4">Entretien</a>
-        <a href="pratique.html"> Pratiques</a>
+        <a href="entretien.html">Entretien</a>
+        <a href="pratique.html">Pratiques</a>
+        <a href="sante.html">COV santé</a>
     </nav>
 
+    <!-- Contenu principal -->
     <div class="content">
         <h1>Types de Carrelage</h1>
 
