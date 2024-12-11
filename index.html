@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plateforme de Formation - Carrelage</title>
     <style>
+        /* Global styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -19,7 +20,7 @@
         nav {
             width: 100%;
             background-color: #007BFF;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
 
@@ -34,7 +35,7 @@
             text-decoration: underline;
         }
 
-        /* Section de contenu */
+        /* Contenu principal */
         .content {
             width: 90%;
             max-width: 1000px;
@@ -52,6 +53,7 @@
             margin-bottom: 30px;
         }
 
+        /* Grille des modules */
         .modules-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -64,6 +66,7 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            border-radius: 8px;
         }
 
         .module-card h3 {
@@ -88,6 +91,59 @@
         .module-card a:hover {
             background-color: #0056b3;
         }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .content {
+                padding: 15px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .module-card a {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 10px 0;
+            }
+
+            nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+
+            .content {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .module-card a {
+                padding: 6px 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -96,11 +152,11 @@
     <nav>
         <a href="index.html">Accueil</a>
         <a href="introduction.html">Introduction</a>
-        <a href="types.html">Types </a>
+        <a href="types.html">Types</a>
         <a href="composition.html">Composition</a>
-        <a href="entretien.html">Entretien </a>
-        <a href="pratique.html"> Pratiques</a>
-        <a href="sante.html"> COV santé </a>
+        <a href="entretien.html">Entretien</a>
+        <a href="pratique.html">Pratiques</a>
+        <a href="sante.html">COV santé</a>
     </nav>
 
     <!-- Contenu principal -->
